@@ -15,3 +15,6 @@ def test_unknown():
 
 def test_empty():
     assert reply("   ") == "Please type a question."
+
+def test_medical_room_lookup():
+    assert "B.102" in reply("Where is the Medical Room?")
